@@ -84,7 +84,15 @@ function PlasmicNavBar__RenderFunc(props) {
         </div>
       </div>
 
-      <div className={classNames(projectcss.all, sty.freeBox___9Zfit)}>
+      <div
+        className={classNames(projectcss.all, sty.freeBox___9Zfit, {
+          [sty.freeBoxtabWelcome___9ZfitGuZv4]: hasVariant(
+            variants,
+            "tabWelcome",
+            "tabWelcome"
+          )
+        })}
+      >
         <p.PlasmicLink
           className={classNames(
             projectcss.all,
@@ -148,6 +156,12 @@ function PlasmicNavBar__RenderFunc(props) {
                 variants,
                 "filled",
                 "filled"
+              ),
+
+              [sty.columntabWelcome__ccIqgGuZv4]: hasVariant(
+                variants,
+                "tabWelcome",
+                "tabWelcome"
               )
             })}
           >
@@ -164,6 +178,18 @@ function PlasmicNavBar__RenderFunc(props) {
                     "filled"
                   ),
 
+                  [sty.linktabArchives__b8Ml1SYi2U]: hasVariant(
+                    variants,
+                    "tabArchives",
+                    "tabArchives"
+                  ),
+
+                  [sty.linktabContact__b8Ml1Iysyt]: hasVariant(
+                    variants,
+                    "tabContact",
+                    "tabContact"
+                  ),
+
                   [sty.linktabHome__b8Ml1Yp5VI]: hasVariant(
                     variants,
                     "tabHome",
@@ -174,12 +200,26 @@ function PlasmicNavBar__RenderFunc(props) {
                     variants,
                     "tabInquiries",
                     "tabInquiries"
+                  ),
+
+                  [sty.linktabWelcome__b8Ml1GuZv4]: hasVariant(
+                    variants,
+                    "tabWelcome",
+                    "tabWelcome"
                   )
                 }
               )}
               component={Link}
               href={
-                hasVariant(variants, "tabInquiries", "tabInquiries")
+                hasVariant(variants, "tabWelcome", "tabWelcome")
+                  ? "/"
+                  : hasVariant(variants, "tabContact", "tabContact")
+                  ? "/"
+                  : hasVariant(variants, "tabInquiries", "tabInquiries")
+                  ? "/"
+                  : hasVariant(variants, "tabArchives", "tabArchives")
+                  ? "/"
+                  : hasVariant(variants, "tabHome", "tabHome")
                   ? "/"
                   : "https://www.plasmic.app/"
               }
@@ -209,6 +249,24 @@ function PlasmicNavBar__RenderFunc(props) {
                     variants,
                     "tabArchives",
                     "tabArchives"
+                  ),
+
+                  [sty.linktabContact__dGayIysyt]: hasVariant(
+                    variants,
+                    "tabContact",
+                    "tabContact"
+                  ),
+
+                  [sty.linktabHome__dGayYp5VI]: hasVariant(
+                    variants,
+                    "tabHome",
+                    "tabHome"
+                  ),
+
+                  [sty.linktabInquiries__dGayBPjTe]: hasVariant(
+                    variants,
+                    "tabInquiries",
+                    "tabInquiries"
                   ),
 
                   [sty.linktabWelcome__dGayGuZv4]: hasVariant(
@@ -246,6 +304,24 @@ function PlasmicNavBar__RenderFunc(props) {
                     variants,
                     "tabArchives",
                     "tabArchives"
+                  ),
+
+                  [sty.linktabHome__zz0JaYp5VI]: hasVariant(
+                    variants,
+                    "tabHome",
+                    "tabHome"
+                  ),
+
+                  [sty.linktabInquiries__zz0JaBPjTe]: hasVariant(
+                    variants,
+                    "tabInquiries",
+                    "tabInquiries"
+                  ),
+
+                  [sty.linktabWelcome__zz0JaGuZv4]: hasVariant(
+                    variants,
+                    "tabWelcome",
+                    "tabWelcome"
                   )
                 }
               )}
@@ -273,6 +349,12 @@ function PlasmicNavBar__RenderFunc(props) {
                 projectcss.__wab_text,
                 sty.link__p9O5T,
                 {
+                  [sty.linkfilled__p9O5T0O3Jw]: hasVariant(
+                    variants,
+                    "filled",
+                    "filled"
+                  ),
+
                   [sty.linktabInquiries__p9O5TBPjTe]: hasVariant(
                     variants,
                     "tabInquiries",

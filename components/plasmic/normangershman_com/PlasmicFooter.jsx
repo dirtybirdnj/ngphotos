@@ -13,11 +13,13 @@ import * as p from "@plasmicapp/react-web";
 import {
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import TextInput from "../../TextInput"; // plasmic-import: iworc5bw6VgnEX/component
 import Button from "../../Button"; // plasmic-import: jqA6_3BfibjBPp/component
 import CopyrightSocialLanguage from "../../CopyrightSocialLanguage"; // plasmic-import: 0uTYi8V9d63H8V/component
+import { useScreenVariants as useScreenVariantsd2NXzJlTXo73O } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: d2nXzJl_tXO73O/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_normangershman_com.module.css"; // plasmic-import: 7TgNrWQj5NP1iabd7btsp3/projectcss
 import sty from "./PlasmicFooter.module.css"; // plasmic-import: d90Pci6N7gSYfW/css
@@ -32,6 +34,10 @@ export const PlasmicFooter__ArgProps = new Array();
 
 function PlasmicFooter__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsd2NXzJlTXo73O()
+  });
+
   return (
     <section
       data-plasmic-name={"root"}
