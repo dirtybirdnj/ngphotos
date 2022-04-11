@@ -14,8 +14,7 @@ import * as p from "@plasmicapp/react-web";
 import {
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  ensureGlobalVariants
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
 import NavBar from "../../NavBar"; // plasmic-import: vtr4HBe3IOcGOj/component
 import Button from "../../Button"; // plasmic-import: jqA6_3BfibjBPp/component
@@ -24,7 +23,6 @@ import Rating from "../../Rating"; // plasmic-import: o1ls_a0IAWOOXD/component
 import EmojiValueProps from "../../EmojiValueProps"; // plasmic-import: nviMx6-5p3l2tz/component
 import Value from "../../Value"; // plasmic-import: QEpVrIaJaWReSL/component
 import Footer from "../../Footer"; // plasmic-import: d90Pci6N7gSYfW/component
-import { useScreenVariants as useScreenVariantsd2NXzJlTXo73O } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: d2nXzJl_tXO73O/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_normangershman_com.module.css"; // plasmic-import: 7TgNrWQj5NP1iabd7btsp3/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: y9R3jsFmeLZthG/css
@@ -44,16 +42,17 @@ export const PlasmicHomepage__ArgProps = new Array("container42");
 
 function PlasmicHomepage__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsd2NXzJlTXo73O()
-  });
-
   return (
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
-        <title key="title">{"ShoeShop"}</title>
-        <meta key="og:title" property="og:title" content={"ShoeShop"} />
+        <title key="title">{"normangershman.com - home"}</title>
+        <meta
+          key="og:title"
+          property="og:title"
+          content={"normangershman.com - home"}
+        />
+
         <meta
           key="description"
           property="og:description"

@@ -15,7 +15,8 @@
   justify-content: flex-start;
   width: 100%;
   height: auto;
-  max-width: 100%;
+  max-width: 980px;
+  align-self: center;
   min-width: 0;
   padding: 8px;
 }
@@ -29,12 +30,39 @@
   color: #757575;
   min-width: 0;
 }
+.freeBox___9Zfit {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  align-self: center;
+  min-width: 0;
+  padding: 8px;
+}
+.img {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  width: 90px;
+  height: 80px;
+  flex-shrink: 0;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.img > .__wab_img-spacer > img {
+  object-fit: cover;
+}
 .freeBox___5HkZm {
   display: flex;
   position: relative;
   flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: auto;
   max-width: 100%;
@@ -50,6 +78,8 @@
   flex-shrink: 1;
   flex-direction: row;
   flex-wrap: nowrap;
+  align-self: center;
+  max-width: 980px;
   min-width: 0;
   padding: 8px;
 }
@@ -151,9 +181,9 @@
   font-size: 17px;
   color: #cccccc;
 }
-.freeBox___04M5I {
+.ecommerceBar {
   max-width: 1024px;
-  display: flex;
+  display: none;
   flex-direction: row;
   flex-column-gap: 0px;
   position: relative;
@@ -167,8 +197,12 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+  color: #cccccc;
   min-width: 0;
   min-height: 0;
+}
+.text__j58Eu {
+  color: #cccccc;
 }
 .svg__h5Bjq {
   position: relative;
@@ -267,4 +301,11 @@
   object-fit: cover;
   width: 24px;
   height: 24px;
+}
+.text__xR2Cj {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
 }

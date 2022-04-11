@@ -23,7 +23,6 @@ import FacebookIcon from "./icons/PlasmicIcon__Facebook"; // plasmic-import: kTI
 import InstagramCircleIcon from "./icons/PlasmicIcon__InstagramCircle"; // plasmic-import: 0pPcsouYL/icon
 import PintrestNewIcon from "./icons/PlasmicIcon__PintrestNew"; // plasmic-import: cPund-yZL/icon
 import EmailIcon from "./icons/PlasmicIcon__Email"; // plasmic-import: KdRa52DefEnD0g/icon
-import Icon15Icon from "./icons/PlasmicIcon__Icon15"; // plasmic-import: vUM6cdbdULy8s4/icon
 
 export const PlasmicCopyrightSocialLanguage__VariantProps = new Array();
 
@@ -48,108 +47,89 @@ function PlasmicCopyrightSocialLanguage__RenderFunc(props) {
         sty.root
       )}
     >
-      <p.Stack
-        as={"div"}
-        hasGap={true}
-        className={classNames(projectcss.all, sty.freeBox__cYkPt)}
-      >
+      <div className={classNames(projectcss.all, sty.freeBox__hAjRj)}>
+        <div className={classNames(projectcss.all, sty.freeBox__uuzOm)}>
+          <Button
+            iconOnly={true}
+            link={"http://twitter.com"}
+            startIcon={
+              <FacebookIcon
+                className={classNames(projectcss.all, sty.svg__eJvDj)}
+                role={"img"}
+              />
+            }
+          />
+
+          <Button
+            className={classNames("__wab_instance", sty.button__oRgqF)}
+            iconOnly={true}
+            link={"http://youtube.com"}
+            startIcon={
+              <InstagramCircleIcon
+                className={classNames(projectcss.all, sty.svg__rOcx2)}
+                role={"img"}
+              />
+            }
+          />
+
+          <Button
+            className={classNames("__wab_instance", sty.button__uJfpf)}
+            iconOnly={true}
+            link={"http://pinterest.com"}
+            startIcon={
+              <PintrestNewIcon
+                className={classNames(projectcss.all, sty.svg__wWcRv)}
+                role={"img"}
+              />
+            }
+          />
+
+          <Button
+            className={classNames("__wab_instance", sty.button__mBrm)}
+            iconOnly={true}
+            link={"http://pinterest.com"}
+            startIcon={
+              <EmailIcon
+                className={classNames(projectcss.all, sty.svg__m3ZOw)}
+                role={"img"}
+              />
+            }
+          />
+        </div>
+
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox__qUyJo)}
+          className={classNames(projectcss.all, sty.freeBox__cYkPt)}
         >
-          <div
-            data-plasmic-name={"text"}
-            data-plasmic-override={overrides.text}
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text
-            )}
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__qUyJo)}
           >
-            <React.Fragment>
-              <React.Fragment>{""}</React.Fragment>
-              <span
-                className={"plasmic_default__all plasmic_default__span"}
-                style={{ color: "#CCCCCC" }}
-              >
-                {"​Copyright © 2021 Norman Gershman. All Rights Reserved."}
-              </span>
-              <React.Fragment>{""}</React.Fragment>
-            </React.Fragment>
-          </div>
-
-          <div className={classNames(projectcss.all, sty.freeBox__uuzOm)}>
-            <Button
-              iconOnly={true}
-              link={"http://twitter.com"}
-              startIcon={
-                <FacebookIcon
-                  className={classNames(projectcss.all, sty.svg__eJvDj)}
-                  role={"img"}
-                />
-              }
-            />
-
-            <Button
-              className={classNames("__wab_instance", sty.button__oRgqF)}
-              iconOnly={true}
-              link={"http://youtube.com"}
-              startIcon={
-                <InstagramCircleIcon
-                  className={classNames(projectcss.all, sty.svg__rOcx2)}
-                  role={"img"}
-                />
-              }
-            />
-
-            <Button
-              className={classNames("__wab_instance", sty.button__uJfpf)}
-              iconOnly={true}
-              link={"http://pinterest.com"}
-              startIcon={
-                <PintrestNewIcon
-                  className={classNames(projectcss.all, sty.svg__wWcRv)}
-                  role={"img"}
-                />
-              }
-            />
-
-            <Button
-              className={classNames("__wab_instance", sty.button__mBrm)}
-              iconOnly={true}
-              link={"http://pinterest.com"}
-              startIcon={
-                <EmailIcon
-                  className={classNames(projectcss.all, sty.svg__m3ZOw)}
-                  role={"img"}
-                />
-              }
-            />
-          </div>
+            <div
+              data-plasmic-name={"text"}
+              data-plasmic-override={overrides.text}
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text
+              )}
+            >
+              <React.Fragment>
+                <React.Fragment>{""}</React.Fragment>
+                <span
+                  className={"plasmic_default__all plasmic_default__span"}
+                  style={{ color: "#CCCCCC" }}
+                >
+                  {"​Copyright © 2022 Norman Gershman. All Rights Reserved."}
+                </span>
+                <React.Fragment>{""}</React.Fragment>
+              </React.Fragment>
+            </div>
+          </p.Stack>
         </p.Stack>
-
-        {true ? (
-          <Button
-            className={classNames("__wab_instance", sty.button___3FMfE)}
-            endIcon={
-              <Icon15Icon
-                className={classNames(projectcss.all, sty.svg__p5L64)}
-                role={"img"}
-              />
-            }
-            showEndIcon={true}
-            startIcon={
-              <Icon15Icon
-                className={classNames(projectcss.all, sty.svg__cpLhw)}
-                role={"img"}
-              />
-            }
-          >
-            {"English"}
-          </Button>
-        ) : null}
-      </p.Stack>
+      </div>
     </p.Stack>
   );
 }

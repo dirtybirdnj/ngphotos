@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -569,6 +569,11 @@
           "id": "1TyG8Eud066xD0",
           "name": "hero",
           "filePath": "../public/plasmic/normangershman_com/images/hero.png"
+        },
+        {
+          "id": "zkq-LC67g",
+          "name": "ng_icon",
+          "filePath": "../public/plasmic/normangershman_com/images/ngIcon.webp"
         }
       ],
       "indirect": false,

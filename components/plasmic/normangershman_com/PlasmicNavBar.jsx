@@ -70,6 +70,28 @@ function PlasmicNavBar__RenderFunc(props) {
         </div>
       </div>
 
+      <div className={classNames(projectcss.all, sty.freeBox___9Zfit)}>
+        <p.PlasmicImg
+          data-plasmic-name={"img"}
+          data-plasmic-override={overrides.img}
+          alt={""}
+          className={classNames(sty.img)}
+          displayHeight={"80px"}
+          displayMaxHeight={"none"}
+          displayMaxWidth={"100%"}
+          displayMinHeight={"0"}
+          displayMinWidth={"0"}
+          displayWidth={"90px"}
+          loading={"lazy"}
+          src={{
+            src: "/plasmic/normangershman_com/images/ngIcon.webp",
+            fullWidth: 162,
+            fullHeight: 144,
+            aspectRatio: undefined
+          }}
+        />
+      </div>
+
       <div className={classNames(projectcss.all, sty.freeBox___5HkZm)}>
         <div
           data-plasmic-name={"columns"}
@@ -142,131 +164,152 @@ function PlasmicNavBar__RenderFunc(props) {
         </div>
       </div>
 
-      <div
-        className={classNames(projectcss.all, sty.freeBox___04M5I, {
-          [sty.freeBoxfilled___04M5I0O3Jw]: hasVariant(
-            variants,
-            "filled",
-            "filled"
-          ),
-
-          [sty.freeBoxsearchOpen___04M5IJxjbw]: hasVariant(
-            variants,
-            "searchOpen",
-            "searchOpen"
-          )
-        })}
-      >
-        <Button
-          data-plasmic-name={"homeButton"}
-          data-plasmic-override={overrides.homeButton}
-          link={"/"}
-          showStartIcon={true}
-          startIcon={
-            <HomeIcon
-              className={classNames(projectcss.all, sty.svg___9Gqhy)}
-              role={"img"}
-            />
-          }
-        >
-          {"Home"}
-        </Button>
-
-        <p.Stack
-          as={"div"}
-          hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox__doadE, {
-            [sty.freeBoxsearchOpen__doadEJxjbw]: hasVariant(
+      {true ? (
+        <div
+          data-plasmic-name={"ecommerceBar"}
+          data-plasmic-override={overrides.ecommerceBar}
+          className={classNames(projectcss.all, sty.ecommerceBar, {
+            [sty.ecommerceBarfilled]: hasVariant(variants, "filled", "filled"),
+            [sty.ecommerceBarsearchOpen]: hasVariant(
               variants,
               "searchOpen",
               "searchOpen"
             )
           })}
         >
-          {(hasVariant(variants, "searchOpen", "searchOpen") ? false : true) ? (
+          <Button
+            data-plasmic-name={"homeButton"}
+            data-plasmic-override={overrides.homeButton}
+            link={"/"}
+            showStartIcon={true}
+            startIcon={
+              <HomeIcon
+                className={classNames(projectcss.all, sty.svg___9Gqhy)}
+                role={"img"}
+              />
+            }
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__j58Eu
+              )}
+            >
+              {"Home"}
+            </div>
+          </Button>
+
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__doadE, {
+              [sty.freeBoxsearchOpen__doadEJxjbw]: hasVariant(
+                variants,
+                "searchOpen",
+                "searchOpen"
+              )
+            })}
+          >
+            {(
+              hasVariant(variants, "searchOpen", "searchOpen") ? false : true
+            ) ? (
+              <Button
+                data-plasmic-name={"searchButton"}
+                data-plasmic-override={overrides.searchButton}
+                className={classNames("__wab_instance", {
+                  [sty.searchButtonsearchOpen]: hasVariant(
+                    variants,
+                    "searchOpen",
+                    "searchOpen"
+                  )
+                })}
+                iconOnly={true}
+                startIcon={
+                  <SearchIcon
+                    className={classNames(projectcss.all, sty.svg__li9DU)}
+                    role={"img"}
+                  />
+                }
+              >
+                {"Menu"}
+              </Button>
+            ) : null}
+            {(
+              hasVariant(variants, "searchOpen", "searchOpen") ? true : true
+            ) ? (
+              <TextInput
+                data-plasmic-name={"searchInput"}
+                data-plasmic-override={overrides.searchInput}
+                className={classNames("__wab_instance", sty.searchInput, {
+                  [sty.searchInputsearchOpen]: hasVariant(
+                    variants,
+                    "searchOpen",
+                    "searchOpen"
+                  )
+                })}
+                placeholder={"Search..."}
+              />
+            ) : null}
+
             <Button
-              data-plasmic-name={"searchButton"}
-              data-plasmic-override={overrides.searchButton}
-              className={classNames("__wab_instance", {
-                [sty.searchButtonsearchOpen]: hasVariant(
-                  variants,
-                  "searchOpen",
-                  "searchOpen"
-                )
-              })}
+              data-plasmic-name={"profileButton"}
+              data-plasmic-override={overrides.profileButton}
               iconOnly={true}
               startIcon={
-                <SearchIcon
-                  className={classNames(projectcss.all, sty.svg__li9DU)}
+                <ProfileIcon
+                  className={classNames(projectcss.all, sty.svg__yc3Wl)}
                   role={"img"}
                 />
               }
             >
               {"Menu"}
             </Button>
-          ) : null}
-          {(hasVariant(variants, "searchOpen", "searchOpen") ? true : true) ? (
-            <TextInput
-              data-plasmic-name={"searchInput"}
-              data-plasmic-override={overrides.searchInput}
-              className={classNames("__wab_instance", sty.searchInput, {
-                [sty.searchInputsearchOpen]: hasVariant(
-                  variants,
-                  "searchOpen",
-                  "searchOpen"
-                )
-              })}
-              placeholder={"Search..."}
-            />
-          ) : null}
 
-          <Button
-            data-plasmic-name={"profileButton"}
-            data-plasmic-override={overrides.profileButton}
-            iconOnly={true}
-            startIcon={
-              <ProfileIcon
-                className={classNames(projectcss.all, sty.svg__yc3Wl)}
-                role={"img"}
-              />
-            }
-          >
-            {"Menu"}
-          </Button>
-
-          <div className={classNames(projectcss.all, sty.freeBox__keaFc)}>
-            <Button
-              data-plasmic-name={"cartButton"}
-              data-plasmic-override={overrides.cartButton}
-              colors={"white"}
-              rounded={true}
-              showStartIcon={true}
-              startIcon={
-                <CartIcon
-                  className={classNames(projectcss.all, sty.svg__qStnv)}
-                  role={"img"}
-                />
-              }
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__iPwjI,
-                  {
-                    [sty.textfilled__iPwjI0O3Jw]: hasVariant(
-                      variants,
-                      "filled",
-                      "filled"
-                    )
-                  }
-                )}
+            <div className={classNames(projectcss.all, sty.freeBox__keaFc)}>
+              <Button
+                data-plasmic-name={"cartButton"}
+                data-plasmic-override={overrides.cartButton}
+                colors={"white"}
+                rounded={true}
+                showStartIcon={true}
+                startIcon={
+                  <CartIcon
+                    className={classNames(projectcss.all, sty.svg__qStnv)}
+                    role={"img"}
+                  />
+                }
               >
-                {hasVariant(variants, "filled", "filled") ? "1" : "0"}
-              </div>
-            </Button>
-          </div>
-        </p.Stack>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__iPwjI,
+                    {
+                      [sty.textfilled__iPwjI0O3Jw]: hasVariant(
+                        variants,
+                        "filled",
+                        "filled"
+                      )
+                    }
+                  )}
+                >
+                  {hasVariant(variants, "filled", "filled") ? "1" : "0"}
+                </div>
+              </Button>
+            </div>
+          </p.Stack>
+        </div>
+      ) : null}
+
+      <div
+        className={classNames(
+          projectcss.all,
+          projectcss.__wab_text,
+          sty.text__xR2Cj
+        )}
+      >
+        {"Enter some text"}
       </div>
     </section>
   );
@@ -275,7 +318,9 @@ function PlasmicNavBar__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
+    "img",
     "columns",
+    "ecommerceBar",
     "homeButton",
     "searchButton",
     "searchInput",
@@ -283,7 +328,17 @@ const PlasmicDescendants = {
     "cartButton"
   ],
 
+  img: ["img"],
   columns: ["columns"],
+  ecommerceBar: [
+    "ecommerceBar",
+    "homeButton",
+    "searchButton",
+    "searchInput",
+    "profileButton",
+    "cartButton"
+  ],
+
   homeButton: ["homeButton"],
   searchButton: ["searchButton"],
   searchInput: ["searchInput"],
@@ -320,7 +375,9 @@ export const PlasmicNavBar = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    img: makeNodeComponent("img"),
     columns: makeNodeComponent("columns"),
+    ecommerceBar: makeNodeComponent("ecommerceBar"),
     homeButton: makeNodeComponent("homeButton"),
     searchButton: makeNodeComponent("searchButton"),
     searchInput: makeNodeComponent("searchInput"),
