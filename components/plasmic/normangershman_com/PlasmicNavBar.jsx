@@ -27,7 +27,14 @@ import SearchIcon from "./icons/PlasmicIcon__Search"; // plasmic-import: ZjQdLe3
 import ProfileIcon from "./icons/PlasmicIcon__Profile"; // plasmic-import: iohl55Xxx3s4LY/icon
 import CartIcon from "./icons/PlasmicIcon__Cart"; // plasmic-import: d94zNi5p8FXJWn/icon
 
-export const PlasmicNavBar__VariantProps = new Array("filled", "searchOpen");
+export const PlasmicNavBar__VariantProps = new Array(
+  "filled",
+  "searchOpen",
+  "tabHome",
+  "tabArchives",
+  "tabInquiries",
+  "tabContact"
+);
 
 export const PlasmicNavBar__ArgProps = new Array();
 
@@ -104,7 +111,14 @@ function PlasmicNavBar__RenderFunc(props) {
                 projectcss.all,
                 projectcss.a,
                 projectcss.__wab_text,
-                sty.link__b8Ml1
+                sty.link__b8Ml1,
+                {
+                  [sty.linktabHome__b8Ml1Yp5VI]: hasVariant(
+                    variants,
+                    "tabHome",
+                    "tabHome"
+                  )
+                }
               )}
               component={Link}
               href={"https://www.plasmic.app/"}
@@ -120,7 +134,14 @@ function PlasmicNavBar__RenderFunc(props) {
                 projectcss.all,
                 projectcss.a,
                 projectcss.__wab_text,
-                sty.link__dGay
+                sty.link__dGay,
+                {
+                  [sty.linktabArchives__dGaysYi2U]: hasVariant(
+                    variants,
+                    "tabArchives",
+                    "tabArchives"
+                  )
+                }
               )}
               component={Link}
               href={"https://www.plasmic.app/"}
@@ -136,7 +157,14 @@ function PlasmicNavBar__RenderFunc(props) {
                 projectcss.all,
                 projectcss.a,
                 projectcss.__wab_text,
-                sty.link__p9O5T
+                sty.link__p9O5T,
+                {
+                  [sty.linktabInquiries__p9O5TBPjTe]: hasVariant(
+                    variants,
+                    "tabInquiries",
+                    "tabInquiries"
+                  )
+                }
               )}
               component={Link}
               href={"https://www.plasmic.app/"}
@@ -152,7 +180,14 @@ function PlasmicNavBar__RenderFunc(props) {
                 projectcss.all,
                 projectcss.a,
                 projectcss.__wab_text,
-                sty.link__q1J1U
+                sty.link__q1J1U,
+                {
+                  [sty.linktabContact__q1J1Uiysyt]: hasVariant(
+                    variants,
+                    "tabContact",
+                    "tabContact"
+                  )
+                }
               )}
               component={Link}
               href={"https://www.plasmic.app/"}

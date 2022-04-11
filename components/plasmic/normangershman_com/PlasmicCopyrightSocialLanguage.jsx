@@ -9,6 +9,7 @@
 // Plasmic Project: 7TgNrWQj5NP1iabd7btsp3
 // Component: 0uTYi8V9d63H8V
 import * as React from "react";
+import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
 import {
   classNames,
@@ -108,12 +109,10 @@ function PlasmicCopyrightSocialLanguage__RenderFunc(props) {
             className={classNames(projectcss.all, sty.freeBox__qUyJo)}
           >
             <div
-              data-plasmic-name={"text"}
-              data-plasmic-override={overrides.text}
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text
+                sty.text___7JYUz
               )}
             >
               <React.Fragment>
@@ -127,6 +126,24 @@ function PlasmicCopyrightSocialLanguage__RenderFunc(props) {
                 <React.Fragment>{""}</React.Fragment>
               </React.Fragment>
             </div>
+
+            <p.PlasmicLink
+              data-plasmic-name={"link"}
+              data-plasmic-override={overrides.link}
+              className={classNames(projectcss.all, projectcss.a, sty.link)}
+              component={Link}
+              platform={"nextjs"}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__wz44W
+                )}
+              >
+                {"vtapi.co"}
+              </div>
+            </p.PlasmicLink>
           </p.Stack>
         </p.Stack>
       </div>
@@ -135,8 +152,8 @@ function PlasmicCopyrightSocialLanguage__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "text"],
-  text: ["text"]
+  root: ["root", "link"],
+  link: ["link"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -168,7 +185,7 @@ export const PlasmicCopyrightSocialLanguage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    text: makeNodeComponent("text"),
+    link: makeNodeComponent("link"),
     // Metadata about props expected for PlasmicCopyrightSocialLanguage
     internalVariantProps: PlasmicCopyrightSocialLanguage__VariantProps,
     internalArgProps: PlasmicCopyrightSocialLanguage__ArgProps

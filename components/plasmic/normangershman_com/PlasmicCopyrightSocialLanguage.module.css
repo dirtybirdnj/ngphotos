@@ -149,10 +149,22 @@
   > img {
   margin-left: 8px;
 }
-.text {
+.text___7JYUz {
   font-weight: 400;
   white-space: pre-wrap;
   color: #666666;
+  font-size: 12px;
+  width: 100%;
+  text-align: right;
+  min-width: 0;
+}
+.link {
+  display: flex;
+}
+.text__wz44W {
+  font-weight: 400;
+  white-space: pre-wrap;
+  color: #cccccc;
   font-size: 12px;
   width: 100%;
   text-align: right;

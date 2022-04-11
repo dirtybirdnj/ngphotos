@@ -185,6 +185,45 @@
           "cssFilePath": "plasmic/normangershman_com/PlasmicHomepage2.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "w-ZHdDNStu",
+          "name": "Archives",
+          "type": "managed",
+          "projectId": "7TgNrWQj5NP1iabd7btsp3",
+          "renderModuleFilePath": "plasmic/normangershman_com/PlasmicArchives.jsx",
+          "importSpec": {
+            "modulePath": "../pages/archives.jsx"
+          },
+          "cssFilePath": "plasmic/normangershman_com/PlasmicArchives.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "L-5elbJE97",
+          "name": "Contact",
+          "type": "managed",
+          "projectId": "7TgNrWQj5NP1iabd7btsp3",
+          "renderModuleFilePath": "plasmic/normangershman_com/PlasmicContact.jsx",
+          "importSpec": {
+            "modulePath": "../pages/contact.jsx"
+          },
+          "cssFilePath": "plasmic/normangershman_com/PlasmicContact.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "My4oZYtOnB",
+          "name": "Inquiries",
+          "type": "managed",
+          "projectId": "7TgNrWQj5NP1iabd7btsp3",
+          "renderModuleFilePath": "plasmic/normangershman_com/PlasmicInquiries.jsx",
+          "importSpec": {
+            "modulePath": "../pages/inquiries.jsx"
+          },
+          "cssFilePath": "plasmic/normangershman_com/PlasmicInquiries.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -574,6 +613,11 @@
           "id": "zkq-LC67g",
           "name": "ng_icon",
           "filePath": "../public/plasmic/normangershman_com/images/ngIcon.webp"
+        },
+        {
+          "id": "u-ISFMh4C",
+          "name": "homepage_image",
+          "filePath": "../public/plasmic/normangershman_com/images/homepageImage.webp"
         }
       ],
       "indirect": false,
