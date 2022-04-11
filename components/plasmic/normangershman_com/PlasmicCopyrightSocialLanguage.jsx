@@ -23,6 +23,7 @@ import sty from "./PlasmicCopyrightSocialLanguage.module.css"; // plasmic-import
 import FacebookIcon from "./icons/PlasmicIcon__Facebook"; // plasmic-import: kTI2qMHAa/icon
 import InstagramCircleIcon from "./icons/PlasmicIcon__InstagramCircle"; // plasmic-import: 0pPcsouYL/icon
 import PintrestNewIcon from "./icons/PlasmicIcon__PintrestNew"; // plasmic-import: cPund-yZL/icon
+import YoutubeIcon from "./icons/PlasmicIcon__Youtube"; // plasmic-import: iok72CtvRnYQtv/icon
 import EmailIcon from "./icons/PlasmicIcon__Email"; // plasmic-import: KdRa52DefEnD0g/icon
 
 export const PlasmicCopyrightSocialLanguage__VariantProps = new Array();
@@ -52,7 +53,7 @@ function PlasmicCopyrightSocialLanguage__RenderFunc(props) {
         <div className={classNames(projectcss.all, sty.freeBox__uuzOm)}>
           <Button
             iconOnly={true}
-            link={"http://twitter.com"}
+            link={"https://www.facebook.com/gershman.archive"}
             startIcon={
               <FacebookIcon
                 className={classNames(projectcss.all, sty.svg__eJvDj)}
@@ -64,7 +65,7 @@ function PlasmicCopyrightSocialLanguage__RenderFunc(props) {
           <Button
             className={classNames("__wab_instance", sty.button__oRgqF)}
             iconOnly={true}
-            link={"http://youtube.com"}
+            link={"https://www.instagram.com/normangershmanarchive"}
             startIcon={
               <InstagramCircleIcon
                 className={classNames(projectcss.all, sty.svg__rOcx2)}
@@ -86,9 +87,21 @@ function PlasmicCopyrightSocialLanguage__RenderFunc(props) {
           />
 
           <Button
+            className={classNames("__wab_instance", sty.button__dg7O)}
+            iconOnly={true}
+            link={"/"}
+            startIcon={
+              <YoutubeIcon
+                className={classNames(projectcss.all, sty.svg__lfpNl)}
+                role={"img"}
+              />
+            }
+          />
+
+          <Button
             className={classNames("__wab_instance", sty.button__mBrm)}
             iconOnly={true}
-            link={"http://pinterest.com"}
+            link={"/contact"}
             startIcon={
               <EmailIcon
                 className={classNames(projectcss.all, sty.svg__m3ZOw)}
@@ -132,7 +145,9 @@ function PlasmicCopyrightSocialLanguage__RenderFunc(props) {
               data-plasmic-override={overrides.link}
               className={classNames(projectcss.all, projectcss.a, sty.link)}
               component={Link}
+              href={"https://www.vtapi.co"}
               platform={"nextjs"}
+              target={"_blank"}
             >
               <div
                 className={classNames(

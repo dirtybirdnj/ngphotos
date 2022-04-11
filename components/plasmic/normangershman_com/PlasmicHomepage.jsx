@@ -91,7 +91,7 @@ function PlasmicHomepage__RenderFunc(props) {
               className={classNames(sty.img)}
               displayHeight={"auto"}
               displayMaxHeight={"none"}
-              displayMaxWidth={"98%"}
+              displayMaxWidth={"976px"}
               displayMinHeight={"0"}
               displayMinWidth={"0"}
               displayWidth={"auto"}
