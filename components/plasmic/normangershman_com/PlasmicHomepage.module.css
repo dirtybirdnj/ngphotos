@@ -22,11 +22,12 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: auto;
+  height: 100%;
   max-width: 100%;
   align-self: center;
   background: #333333;
   min-width: 0;
+  min-height: 0;
   padding: 8px;
 }
 .img {

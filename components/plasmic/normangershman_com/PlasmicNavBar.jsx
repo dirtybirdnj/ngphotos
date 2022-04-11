@@ -69,6 +69,12 @@ function PlasmicNavBar__RenderFunc(props) {
                 variants,
                 "filled",
                 "filled"
+              ),
+
+              [sty.texttabInquiries__m7JMjBPjTe]: hasVariant(
+                variants,
+                "tabInquiries",
+                "tabInquiries"
               )
             }
           )}
@@ -78,32 +84,62 @@ function PlasmicNavBar__RenderFunc(props) {
       </div>
 
       <div className={classNames(projectcss.all, sty.freeBox___9Zfit)}>
-        <p.PlasmicImg
-          data-plasmic-name={"img"}
-          data-plasmic-override={overrides.img}
-          alt={""}
-          className={classNames(sty.img)}
-          displayHeight={"80px"}
-          displayMaxHeight={"none"}
-          displayMaxWidth={"100%"}
-          displayMinHeight={"0"}
-          displayMinWidth={"0"}
-          displayWidth={"90px"}
-          loading={"lazy"}
-          src={{
-            src: "/plasmic/normangershman_com/images/ngIcon.webp",
-            fullWidth: 162,
-            fullHeight: 144,
-            aspectRatio: undefined
-          }}
-        />
+        <p.PlasmicLink
+          className={classNames(
+            projectcss.all,
+            projectcss.a,
+            sty.link___8YfFd,
+            {
+              [sty.linktabInquiries___8YfFdBPjTe]: hasVariant(
+                variants,
+                "tabInquiries",
+                "tabInquiries"
+              )
+            }
+          )}
+          component={Link}
+          href={
+            hasVariant(variants, "tabInquiries", "tabInquiries")
+              ? "/"
+              : undefined
+          }
+          platform={"nextjs"}
+        >
+          <p.PlasmicImg
+            data-plasmic-name={"img"}
+            data-plasmic-override={overrides.img}
+            alt={""}
+            className={classNames(sty.img, {
+              [sty.imgtabInquiries]: hasVariant(
+                variants,
+                "tabInquiries",
+                "tabInquiries"
+              )
+            })}
+            displayHeight={"80px"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"90px"}
+            loading={"lazy"}
+            src={{
+              src: "/plasmic/normangershman_com/images/ngIcon.webp",
+              fullWidth: 162,
+              fullHeight: 144,
+              aspectRatio: undefined
+            }}
+          />
+        </p.PlasmicLink>
       </div>
 
       <div className={classNames(projectcss.all, sty.freeBox___5HkZm)}>
         <div
           data-plasmic-name={"columns"}
           data-plasmic-override={overrides.columns}
-          className={classNames(projectcss.all, sty.columns)}
+          className={classNames(projectcss.all, sty.columns, {
+            [sty.columnstabHome]: hasVariant(variants, "tabHome", "tabHome")
+          })}
         >
           <div className={classNames(projectcss.all, sty.column__ccIqg)}>
             <p.PlasmicLink
@@ -117,11 +153,21 @@ function PlasmicNavBar__RenderFunc(props) {
                     variants,
                     "tabHome",
                     "tabHome"
+                  ),
+
+                  [sty.linktabInquiries__b8Ml1BPjTe]: hasVariant(
+                    variants,
+                    "tabInquiries",
+                    "tabInquiries"
                   )
                 }
               )}
               component={Link}
-              href={"https://www.plasmic.app/"}
+              href={
+                hasVariant(variants, "tabInquiries", "tabInquiries")
+                  ? "/"
+                  : "https://www.plasmic.app/"
+              }
               platform={"nextjs"}
             >
               {"HOME"}
