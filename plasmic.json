@@ -224,6 +224,19 @@
           "cssFilePath": "plasmic/normangershman_com/PlasmicInquiries.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "tGccqW1Tf0",
+          "name": "FamilyStatement",
+          "type": "managed",
+          "projectId": "7TgNrWQj5NP1iabd7btsp3",
+          "renderModuleFilePath": "plasmic/normangershman_com/PlasmicFamilyStatement.jsx",
+          "importSpec": {
+            "modulePath": "../pages/family-statement.jsx"
+          },
+          "cssFilePath": "plasmic/normangershman_com/PlasmicFamilyStatement.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -618,6 +631,16 @@
           "id": "u-ISFMh4C",
           "name": "homepage_image",
           "filePath": "../public/plasmic/normangershman_com/images/homepageImage.webp"
+        },
+        {
+          "id": "clfG5yYgo",
+          "name": "rightsideski",
+          "filePath": "../public/plasmic/normangershman_com/images/rightsideski.webp"
+        },
+        {
+          "id": "E8-yvBs7q",
+          "name": "rightsideski.png",
+          "filePath": "../public/plasmic/normangershman_com/images/rightsideskipng.png"
         }
       ],
       "indirect": false,

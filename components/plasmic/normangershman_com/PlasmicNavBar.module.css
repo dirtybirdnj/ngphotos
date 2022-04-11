@@ -78,26 +78,29 @@
   position: relative;
   width: 100%;
   height: auto;
-  align-items: stretch;
   flex-shrink: 1;
   flex-direction: row;
   flex-wrap: nowrap;
   align-self: center;
   max-width: 980px;
+  align-items: stretch;
   min-width: 0;
   padding: 8px;
 }
-.columns > :nth-child(4n + 1) {
-  width: calc((100% - 4 * 0px) * 3 / 12);
+.columns > :nth-child(5n + 1) {
+  width: calc((100% - 5 * 0px) * 3 / 12);
 }
-.columns > :nth-child(4n + 2) {
-  width: calc((100% - 4 * 0px) * 3 / 12);
+.columns > :nth-child(5n + 2) {
+  width: calc((100% - 5 * 0px) * 2 / 12);
 }
-.columns > :nth-child(4n + 3) {
-  width: calc((100% - 4 * 0px) * 3 / 12);
+.columns > :nth-child(5n + 3) {
+  width: calc((100% - 5 * 0px) * 3 / 12);
 }
-.columns > :nth-child(4n + 4) {
-  width: calc((100% - 4 * 0px) * 3 / 12);
+.columns > :nth-child(5n + 4) {
+  width: calc((100% - 5 * 0px) * 1 / 12);
+}
+.columns > :nth-child(5n + 5) {
+  width: calc((100% - 5 * 0px) * 3 / 12);
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .columns {
@@ -113,17 +116,20 @@
     width: calc((100% - 1 * 0px) * 12 / 12);
   }
 }
-.columnstabHome > :nth-child(4n + 1) {
-  width: calc((100% - 4 * 0px) * 3 / 12);
+.columnstabHome > :nth-child(5n + 1) {
+  width: calc((100% - 5 * 0px) * 3 / 12);
 }
-.columnstabHome > :nth-child(4n + 2) {
-  width: calc((100% - 4 * 0px) * 3 / 12);
+.columnstabHome > :nth-child(5n + 2) {
+  width: calc((100% - 5 * 0px) * 2 / 12);
 }
-.columnstabHome > :nth-child(4n + 3) {
-  width: calc((100% - 4 * 0px) * 3 / 12);
+.columnstabHome > :nth-child(5n + 3) {
+  width: calc((100% - 5 * 0px) * 3 / 12);
 }
-.columnstabHome > :nth-child(4n + 4) {
-  width: calc((100% - 4 * 0px) * 3 / 12);
+.columnstabHome > :nth-child(5n + 4) {
+  width: calc((100% - 5 * 0px) * 1 / 12);
+}
+.columnstabHome > :nth-child(5n + 5) {
+  width: calc((100% - 5 * 0px) * 3 / 12);
 }
 .column__ccIqg {
   display: flex;
@@ -168,6 +174,34 @@
   color: #cccccc;
 }
 .linktabArchives__dGaysYi2U {
+  font-weight: 400;
+  text-decoration-line: none;
+  font-size: 17px;
+  color: #cccccc;
+}
+.linktabWelcome__dGayGuZv4 {
+  color: #ffee59;
+  font-weight: 700;
+}
+.column__hsuUx {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.link__zz0Ja {
+  position: relative;
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  color: #cccccc;
+}
+.linktabArchives__zz0JasYi2U {
   font-weight: 700;
   text-decoration-line: none;
   font-size: 17px;

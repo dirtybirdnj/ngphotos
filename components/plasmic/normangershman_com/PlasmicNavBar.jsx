@@ -33,7 +33,8 @@ export const PlasmicNavBar__VariantProps = new Array(
   "tabHome",
   "tabArchives",
   "tabInquiries",
-  "tabContact"
+  "tabContact",
+  "tabWelcome"
 );
 
 export const PlasmicNavBar__ArgProps = new Array();
@@ -141,7 +142,15 @@ function PlasmicNavBar__RenderFunc(props) {
             [sty.columnstabHome]: hasVariant(variants, "tabHome", "tabHome")
           })}
         >
-          <div className={classNames(projectcss.all, sty.column__ccIqg)}>
+          <div
+            className={classNames(projectcss.all, sty.column__ccIqg, {
+              [sty.columnfilled__ccIqg0O3Jw]: hasVariant(
+                variants,
+                "filled",
+                "filled"
+              )
+            })}
+          >
             <p.PlasmicLink
               className={classNames(
                 projectcss.all,
@@ -149,6 +158,12 @@ function PlasmicNavBar__RenderFunc(props) {
                 projectcss.__wab_text,
                 sty.link__b8Ml1,
                 {
+                  [sty.linkfilled__b8Ml10O3Jw]: hasVariant(
+                    variants,
+                    "filled",
+                    "filled"
+                  ),
+
                   [sty.linktabHome__b8Ml1Yp5VI]: hasVariant(
                     variants,
                     "tabHome",
@@ -174,7 +189,15 @@ function PlasmicNavBar__RenderFunc(props) {
             </p.PlasmicLink>
           </div>
 
-          <div className={classNames(projectcss.all, sty.column__rmH84)}>
+          <div
+            className={classNames(projectcss.all, sty.column__rmH84, {
+              [sty.columnfilled__rmH840O3Jw]: hasVariant(
+                variants,
+                "filled",
+                "filled"
+              )
+            })}
+          >
             <p.PlasmicLink
               className={classNames(
                 projectcss.all,
@@ -183,6 +206,43 @@ function PlasmicNavBar__RenderFunc(props) {
                 sty.link__dGay,
                 {
                   [sty.linktabArchives__dGaysYi2U]: hasVariant(
+                    variants,
+                    "tabArchives",
+                    "tabArchives"
+                  ),
+
+                  [sty.linktabWelcome__dGayGuZv4]: hasVariant(
+                    variants,
+                    "tabWelcome",
+                    "tabWelcome"
+                  )
+                }
+              )}
+              component={Link}
+              href={"/family-statement"}
+              platform={"nextjs"}
+            >
+              {"WELCOME"}
+            </p.PlasmicLink>
+          </div>
+
+          <div
+            className={classNames(projectcss.all, sty.column__hsuUx, {
+              [sty.columnfilled__hsuUx0O3Jw]: hasVariant(
+                variants,
+                "filled",
+                "filled"
+              )
+            })}
+          >
+            <p.PlasmicLink
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link__zz0Ja,
+                {
+                  [sty.linktabArchives__zz0JasYi2U]: hasVariant(
                     variants,
                     "tabArchives",
                     "tabArchives"
@@ -197,7 +257,15 @@ function PlasmicNavBar__RenderFunc(props) {
             </p.PlasmicLink>
           </div>
 
-          <div className={classNames(projectcss.all, sty.column__aOkvC)}>
+          <div
+            className={classNames(projectcss.all, sty.column__aOkvC, {
+              [sty.columnfilled__aOkvC0O3Jw]: hasVariant(
+                variants,
+                "filled",
+                "filled"
+              )
+            })}
+          >
             <p.PlasmicLink
               className={classNames(
                 projectcss.all,
@@ -220,7 +288,15 @@ function PlasmicNavBar__RenderFunc(props) {
             </p.PlasmicLink>
           </div>
 
-          <div className={classNames(projectcss.all, sty.column__xijj6)}>
+          <div
+            className={classNames(projectcss.all, sty.column__xijj6, {
+              [sty.columnfilled__xijj60O3Jw]: hasVariant(
+                variants,
+                "filled",
+                "filled"
+              )
+            })}
+          >
             <p.PlasmicLink
               className={classNames(
                 projectcss.all,
