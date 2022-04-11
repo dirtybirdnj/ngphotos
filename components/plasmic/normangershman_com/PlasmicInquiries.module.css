@@ -39,6 +39,11 @@
   font-family: "Lato", sans-serif;
   min-width: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .text___0BbI {
+    padding-left: 10px;
+  }
+}
 .text__oUCx {
   position: relative;
   width: 100%;
@@ -48,6 +53,12 @@
   font-size: 20px;
   font-family: "Lato", sans-serif;
   min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__oUCx {
+    padding-left: 15px;
+    padding-right: 10px;
+  }
 }
 .footer:global(.__wab_instance) {
   position: relative;

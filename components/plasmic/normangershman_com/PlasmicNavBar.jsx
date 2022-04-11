@@ -144,7 +144,7 @@ function PlasmicNavBar__RenderFunc(props) {
                 }
               )}
               component={Link}
-              href={"https://www.plasmic.app/"}
+              href={"/archives"}
               platform={"nextjs"}
             >
               {"ARCHIVES"}
@@ -167,7 +167,7 @@ function PlasmicNavBar__RenderFunc(props) {
                 }
               )}
               component={Link}
-              href={"https://www.plasmic.app/"}
+              href={"/inquiries"}
               platform={"nextjs"}
             >
               {"INQUIRIES"}
@@ -190,7 +190,7 @@ function PlasmicNavBar__RenderFunc(props) {
                 }
               )}
               component={Link}
-              href={"https://www.plasmic.app/"}
+              href={"/contact"}
               platform={"nextjs"}
             >
               {"CONTACT"}
