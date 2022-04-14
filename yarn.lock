@@ -3616,6 +3616,11 @@ react-is@^16.13.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-lightbox-gallery@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-lightbox-gallery/-/react-lightbox-gallery-2.0.1.tgz#443d9d09f6d816ad9de333e0ff6fd490ff9832ef"
+  integrity sha512-G5Ao+0FOASCW3YJKT920U7vHHiLNOB0N3yaFOEZCTgt0B6xbNOfrW9/57vNhC22nCurROMaqST2+j/jFuSYujg==
+
 react-stately@^3.6.0:
   version "3.12.2"
   resolved "https://registry.yarnpkg.com/react-stately/-/react-stately-3.12.2.tgz#303f1b711ffde2b7f35f828415c6365822b9cd9b"
