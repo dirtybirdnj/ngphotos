@@ -16,7 +16,7 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import NavBar from "../../NavBar"; // plasmic-import: vtr4HBe3IOcGOj/component
-import ImageGallery from "../../ImageGallery"; // plasmic-import: 551gOdMDE8/component
+import Gallery from "../../Gallery"; // plasmic-import: hDT3vhvd4K/component
 import Footer from "../../Footer"; // plasmic-import: d90Pci6N7gSYfW/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_normangershman_com.module.css"; // plasmic-import: 7TgNrWQj5NP1iabd7btsp3/projectcss
@@ -86,12 +86,6 @@ function PlasmicArchivesPortraits__RenderFunc(props) {
               {"ARCHIVE COLLECTION"}
             </div>
 
-            <ImageGallery
-              data-plasmic-name={"imageGallery"}
-              data-plasmic-override={overrides.imageGallery}
-              className={classNames("__wab_instance", sty.imageGallery)}
-            />
-
             <div
               className={classNames(
                 projectcss.all,
@@ -103,6 +97,12 @@ function PlasmicArchivesPortraits__RenderFunc(props) {
                 "Each collection is a separate body of work by category, interest and aesthetics. Some prints are already available. More will be available monthly or sooner. Please do inquire if a particular one is of interest."
               }
             </div>
+
+            <Gallery
+              data-plasmic-name={"gallery"}
+              data-plasmic-override={overrides.gallery}
+              className={classNames("__wab_instance", sty.gallery)}
+            />
 
             <div
               className={classNames(
@@ -131,10 +131,10 @@ function PlasmicArchivesPortraits__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navBar", "freeBox", "imageGallery", "footer"],
+  root: ["root", "navBar", "freeBox", "gallery", "footer"],
   navBar: ["navBar"],
-  freeBox: ["freeBox", "imageGallery"],
-  imageGallery: ["imageGallery"],
+  freeBox: ["freeBox", "gallery"],
+  gallery: ["gallery"],
   footer: ["footer"]
 };
 
@@ -169,7 +169,7 @@ export const PlasmicArchivesPortraits = Object.assign(
     // Helper components rendering sub-elements
     navBar: makeNodeComponent("navBar"),
     freeBox: makeNodeComponent("freeBox"),
-    imageGallery: makeNodeComponent("imageGallery"),
+    gallery: makeNodeComponent("gallery"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicArchivesPortraits
     internalVariantProps: PlasmicArchivesPortraits__VariantProps,

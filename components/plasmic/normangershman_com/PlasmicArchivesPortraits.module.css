@@ -20,7 +20,7 @@
   position: relative;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   height: 100%;
   max-width: 100%;
@@ -39,12 +39,6 @@
   font-family: "Lato", sans-serif;
   min-width: 0;
 }
-.imageGallery:global(.__wab_instance) {
-  max-width: 800px;
-  position: relative;
-  width: 100%;
-  min-width: 0;
-}
 .text__futaa {
   position: relative;
   width: 100%;
@@ -54,6 +48,11 @@
   font-size: 20px;
   font-family: "Lato", sans-serif;
   min-width: 0;
+}
+.gallery:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  align-self: center;
 }
 .text__d274J {
   position: relative;

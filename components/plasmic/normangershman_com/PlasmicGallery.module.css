@@ -1,0 +1,51 @@
+.root {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+.text {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.slider:global(.__wab_instance) {
+  width: 100%;
+  max-width: 100%;
+  flex-direction: column;
+  position: relative;
+  min-width: 0;
+}
+.img__b7NhW {
+  object-fit: cover;
+  max-width: 100%;
+}
+.img__b7NhW > picture > img {
+  object-fit: cover;
+}
+.img__b7NhW > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.img__mn4W8 {
+  object-fit: cover;
+  max-width: 100%;
+}
+.img__mn4W8 > picture > img {
+  object-fit: cover;
+}
+.img__mn4W8 > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.img__x2Gef {
+  object-fit: cover;
+  max-width: 100%;
+}
+.img__x2Gef > picture > img {
+  object-fit: cover;
+}
+.img__x2Gef > .__wab_img-spacer > img {
+  object-fit: cover;
+}
