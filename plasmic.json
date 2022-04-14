@@ -250,6 +250,19 @@
           "cssFilePath": "plasmic/normangershman_com/PlasmicImageGallery.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "cWK6ipEh5E",
+          "name": "ArchivesPortraits",
+          "type": "managed",
+          "projectId": "7TgNrWQj5NP1iabd7btsp3",
+          "renderModuleFilePath": "plasmic/normangershman_com/PlasmicArchivesPortraits.jsx",
+          "importSpec": {
+            "modulePath": "../pages/archives/portraits.jsx"
+          },
+          "cssFilePath": "plasmic/normangershman_com/PlasmicArchivesPortraits.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
