@@ -27,6 +27,7 @@ export const PlasmicInquiries__ArgProps = new Array();
 
 function PlasmicInquiries__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   return (
     <React.Fragment>
       <Head>

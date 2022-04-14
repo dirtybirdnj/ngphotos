@@ -44,6 +44,7 @@ export const PlasmicHomepage2__ArgProps = new Array("container42");
 
 function PlasmicHomepage2__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsd2NXzJlTXo73O()
   });

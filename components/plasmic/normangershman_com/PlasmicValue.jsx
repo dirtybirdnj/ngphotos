@@ -37,6 +37,7 @@ export const PlasmicValue__ArgProps = new Array(
 
 function PlasmicValue__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   return (
     <p.Stack
       as={"div"}

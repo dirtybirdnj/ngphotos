@@ -41,6 +41,7 @@ export const PlasmicNavBar__ArgProps = new Array();
 
 function PlasmicNavBar__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   return (
     <section
       data-plasmic-name={"root"}

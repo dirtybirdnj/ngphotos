@@ -32,6 +32,7 @@ export const PlasmicCopyrightSocialLanguage__ArgProps = new Array();
 
 function PlasmicCopyrightSocialLanguage__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   return (
     <p.Stack
       as={"div"}

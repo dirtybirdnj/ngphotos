@@ -27,6 +27,7 @@ export const PlasmicArchives__ArgProps = new Array();
 
 function PlasmicArchives__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   return (
     <React.Fragment>
       <Head>

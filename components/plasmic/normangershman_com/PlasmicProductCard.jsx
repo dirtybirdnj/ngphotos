@@ -39,6 +39,7 @@ export const PlasmicProductCard__ArgProps = new Array(
 
 function PlasmicProductCard__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   const [isRootHover, triggerRootHoverProps] = useTrigger("useHover", {});
   const triggers = {
     hover_root: isRootHover

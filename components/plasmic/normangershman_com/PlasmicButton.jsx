@@ -43,6 +43,7 @@ export const PlasmicButton__ArgProps = new Array(
 
 function PlasmicButton__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   return (
     <p.Stack
       as={"button"}
