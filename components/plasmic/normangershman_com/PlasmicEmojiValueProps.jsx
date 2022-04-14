@@ -31,6 +31,7 @@ export const PlasmicEmojiValueProps__ArgProps = new Array("children");
 
 function PlasmicEmojiValueProps__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   return (
     <section
       data-plasmic-name={"root"}

@@ -237,6 +237,19 @@
           "cssFilePath": "plasmic/normangershman_com/PlasmicFamilyStatement.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "551gOdMDE8",
+          "name": "ImageGallery",
+          "type": "managed",
+          "projectId": "7TgNrWQj5NP1iabd7btsp3",
+          "renderModuleFilePath": "plasmic/normangershman_com/PlasmicImageGallery.jsx",
+          "importSpec": {
+            "modulePath": "ImageGallery.jsx"
+          },
+          "cssFilePath": "plasmic/normangershman_com/PlasmicImageGallery.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
